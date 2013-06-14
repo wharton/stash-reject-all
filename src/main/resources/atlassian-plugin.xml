@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<atlassian-plugin key="${project.groupId}.${project.artifactId}" name="${project.name}" plugins-version="2">
+	
+  <plugin-info>
+    <description>${project.description}</description>
+    <version>${project.version}</version>
+    <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+  </plugin-info>
+
+  <repository-hook name="Reject All Repository Hook" i18n-name-key="reject-all-repository-hook.name" key="reject-all-repository-hook" class="edu.upenn.wharton.stash.plugin.hook.RejectAllRepositoryHook">
+    <description key="reject-all-repository-hook.description">The Reject All Repository Hook Plugin</description>
+  </repository-hook>
+
+</atlassian-plugin>
